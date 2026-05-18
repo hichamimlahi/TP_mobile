@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_nom"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/hint_nomtxt"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_prenom"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/hint_prnomtxt"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nom" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/hint_agetxt"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_prenom" />
+
+    <EditText
+        android:id="@+id/et_fonc"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/hint_fonctxt"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+    <EditText
+        android:id="@+id/et_doti"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:hint="@string/hint_dotitxt"
+        android:inputType="number"
+        android:autofillHints="password"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_fonc" />
+
+    <EditText
+        android:id="@+id/et_cin"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/hint_cintxt"
+        android:ems="10"
+        android:inputType="number"
+        android:autofillHints="password"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_doti" />
+
+    <Button
+        android:id="@+id/bt_newemp"
+        android:layout_width="133dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/btcreat_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cin" />
+
+    <Button
+        android:id="@+id/bt_deser"
+        android:layout_width="133dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/btdeser_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toEndOf="@+id/bt_newemp"
+        app:layout_constraintTop_toBottomOf="@+id/et_cin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TP4_persist</string>
+    <string name="hint_nomtxt">Nom</string>
+    <string name="hint_prnomtxt">Prénom</string>
+    <string name="hint_agetxt">Age</string>
+    <string name="hint_fonctxt">Fonction</string>
+    <string name="hint_dotitxt">Doti</string>
+    <string name="hint_cintxt">CIN</string>
+    <string name="btcreat_header">Créer</string>
+    <string name="btdeser_header">Désérialiser</string>
+</resources>
